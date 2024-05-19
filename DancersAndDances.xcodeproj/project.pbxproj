@@ -13,6 +13,8 @@
 		B1142CC82BF99F5300148296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1142CC72BF99F5300148296 /* Assets.xcassets */; };
 		B1142CCB2BF99F5300148296 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1142CCA2BF99F5300148296 /* Preview Assets.xcassets */; };
 		B175A6C82BF9CBF900360B3F /* Dance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B175A6C72BF9CBF900360B3F /* Dance.swift */; };
+		B175A6CA2BF9CCCC00360B3F /* DancerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B175A6C92BF9CCCC00360B3F /* DancerList.swift */; };
+		B175A6CC2BF9CE3500360B3F /* DanceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B175A6CB2BF9CE3500360B3F /* DanceList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		B1142CC72BF99F5300148296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1142CCA2BF99F5300148296 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B175A6C72BF9CBF900360B3F /* Dance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dance.swift; sourceTree = "<group>"; };
+		B175A6C92BF9CCCC00360B3F /* DancerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DancerList.swift; sourceTree = "<group>"; };
+		B175A6CB2BF9CE3500360B3F /* DanceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +61,12 @@
 			children = (
 				B1142CC12BF99F5200148296 /* DancersAndDancesApp.swift */,
 				B1142CC32BF99F5200148296 /* ContentView.swift */,
+				B175A6C92BF9CCCC00360B3F /* DancerList.swift */,
 				B1142CC52BF99F5200148296 /* Dancer.swift */,
 				B175A6C72BF9CBF900360B3F /* Dance.swift */,
 				B1142CC72BF99F5300148296 /* Assets.xcassets */,
 				B1142CC92BF99F5300148296 /* Preview Content */,
+				B175A6CB2BF9CE3500360B3F /* DanceList.swift */,
 			);
 			path = DancersAndDances;
 			sourceTree = "<group>";
@@ -146,7 +152,9 @@
 				B1142CC42BF99F5200148296 /* ContentView.swift in Sources */,
 				B175A6C82BF9CBF900360B3F /* Dance.swift in Sources */,
 				B1142CC62BF99F5200148296 /* Dancer.swift in Sources */,
+				B175A6CA2BF9CCCC00360B3F /* DancerList.swift in Sources */,
 				B1142CC22BF99F5200148296 /* DancersAndDancesApp.swift in Sources */,
+				B175A6CC2BF9CE3500360B3F /* DanceList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

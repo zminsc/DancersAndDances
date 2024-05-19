@@ -12,7 +12,17 @@ struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
 
     var body: some View {
-        Text("Hello, world!")
+        TabView {
+            DanceList()
+                .tabItem {
+                    Label("Dances", systemImage: "person.and.person.fill")
+                }
+            
+            DancerList()
+                .tabItem {
+                    Label("Dancers", systemImage: "person.fill")
+                }
+        }
     }
 }
 

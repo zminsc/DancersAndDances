@@ -9,18 +9,20 @@
 /* Begin PBXBuildFile section */
 		B1142CC22BF99F5200148296 /* DancersAndDancesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1142CC12BF99F5200148296 /* DancersAndDancesApp.swift */; };
 		B1142CC42BF99F5200148296 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1142CC32BF99F5200148296 /* ContentView.swift */; };
-		B1142CC62BF99F5200148296 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1142CC52BF99F5200148296 /* Item.swift */; };
+		B1142CC62BF99F5200148296 /* Dancer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1142CC52BF99F5200148296 /* Dancer.swift */; };
 		B1142CC82BF99F5300148296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1142CC72BF99F5300148296 /* Assets.xcassets */; };
 		B1142CCB2BF99F5300148296 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1142CCA2BF99F5300148296 /* Preview Assets.xcassets */; };
+		B175A6C82BF9CBF900360B3F /* Dance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B175A6C72BF9CBF900360B3F /* Dance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B1142CBE2BF99F5200148296 /* DancersAndDances.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DancersAndDances.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1142CC12BF99F5200148296 /* DancersAndDancesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DancersAndDancesApp.swift; sourceTree = "<group>"; };
 		B1142CC32BF99F5200148296 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B1142CC52BF99F5200148296 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B1142CC52BF99F5200148296 /* Dancer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dancer.swift; sourceTree = "<group>"; };
 		B1142CC72BF99F5300148296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1142CCA2BF99F5300148296 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B175A6C72BF9CBF900360B3F /* Dance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			children = (
 				B1142CC12BF99F5200148296 /* DancersAndDancesApp.swift */,
 				B1142CC32BF99F5200148296 /* ContentView.swift */,
-				B1142CC52BF99F5200148296 /* Item.swift */,
+				B1142CC52BF99F5200148296 /* Dancer.swift */,
+				B175A6C72BF9CBF900360B3F /* Dance.swift */,
 				B1142CC72BF99F5300148296 /* Assets.xcassets */,
 				B1142CC92BF99F5300148296 /* Preview Content */,
 			);
@@ -141,7 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1142CC42BF99F5200148296 /* ContentView.swift in Sources */,
-				B1142CC62BF99F5200148296 /* Item.swift in Sources */,
+				B175A6C82BF9CBF900360B3F /* Dance.swift in Sources */,
+				B1142CC62BF99F5200148296 /* Dancer.swift in Sources */,
 				B1142CC22BF99F5200148296 /* DancersAndDancesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,7 +12,8 @@ import SwiftData
 struct DancersAndDancesApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Dancer.self,
+            Dance.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 

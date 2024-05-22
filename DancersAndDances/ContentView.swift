@@ -28,5 +28,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: Dancer.self, inMemory: true)
+        .modelContainer(SampleData.shared.modelContainer)
 }

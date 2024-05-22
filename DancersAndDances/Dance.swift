@@ -16,4 +16,11 @@ final class Dance {
     init(name: String) {
         self.name = name
     }
+    
+    static let sampleData = [
+        Dance(name: "Soldier"),
+        Dance(name: "Dai"),
+        Dance(name: "Straightsword-Fribbon"),
+        Dance(name: "Long Fabric"),
+    ]
 }

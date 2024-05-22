@@ -16,4 +16,11 @@ final class Dancer {
     init(name: String) {
         self.name = name
     }
+    
+    static let sampleData = [
+        Dancer(name: "Alice"),
+        Dancer(name: "Bob"),
+        Dancer(name: "Carol"),
+        Dancer(name: "Dan"),
+    ]
 }

@@ -14,6 +14,7 @@ struct DancersAndDancesApp: App {
         let schema = Schema([
             Dancer.self,
             Dance.self,
+            DanceDancer.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 

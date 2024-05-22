@@ -68,5 +68,5 @@ struct DancerList: View {
 
 #Preview {
     DancerList()
-        .modelContainer(for: Dancer.self, inMemory: true)
+        .modelContainer(SampleData.shared.modelContainer)
 }

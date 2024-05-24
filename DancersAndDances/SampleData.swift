@@ -21,7 +21,6 @@ class SampleData {
         let schema = Schema([
             Dancer.self,
             Dance.self,
-            DanceDancer.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: true)
 
@@ -43,9 +42,12 @@ class SampleData {
             modelContext.insert(dance)
         }
         
-        for danceDancer in DanceDancer.sampleData {
-            modelContext.insert(danceDancer)
-        }
+        Dancer.sampleData[1].dances.append(Dance.sampleData[0])
+        Dancer.sampleData[3].dances.append(Dance.sampleData[0])
+        Dancer.sampleData[0].dances.append(Dance.sampleData[1])
+        Dancer.sampleData[1].dances.append(Dance.sampleData[1])
+        Dancer.sampleData[2].dances.append(Dance.sampleData[2])
+        Dancer.sampleData[2].dances.append(Dance.sampleData[3])
         
         do {
             try modelContext.save()

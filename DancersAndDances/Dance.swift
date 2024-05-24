@@ -11,7 +11,7 @@ import SwiftData
 @Model
 final class Dance {
     var name: String
-    var dancers = [Dancer]()
+    @Relationship(inverse: \Dancer.dances) var dancers = [Dancer]()
     
     init(name: String) {
         self.name = name

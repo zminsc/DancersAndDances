@@ -24,10 +24,20 @@ struct DanceDetail: View {
         Form {
             TextField("Name", text: $dance.name)
             
-            Section("Dancers") {
+            Section {
                 List {
                     ForEach(dance.dancers) { dancer in
                         Text(dancer.name)
+                    }
+                }
+            } header: {
+                HStack {
+                    Text("Dancers")
+                    Spacer()
+                    NavigationLink {
+                        DancerSelection(dance: dance)
+                    } label: {
+                        Image(systemName: "plus")
                     }
                 }
             }
@@ -46,6 +56,26 @@ struct DanceDetail: View {
                         modelContext.delete(dance)
                         dismiss()
                     }
+                }
+            }
+        }
+    }
+}
+
+struct DancerSelection: View {
+    @Environment(\.dismiss) private var dismiss
+    @Query(sort: \Dancer.name) private var dancers: [Dancer]
+    
+    let dance: Dance
+    
+    var body: some View {
+        List {
+            ForEach(dancers) { dancer in
+                Button {
+                    dancer.dances.append(dance)
+                    dismiss()
+                } label: {
+                    Text(dancer.name)
                 }
             }
         }

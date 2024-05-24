@@ -18,6 +18,7 @@
 		B175A6CC2BF9CE3500360B3F /* DanceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B175A6CB2BF9CE3500360B3F /* DanceList.swift */; };
 		B190DFC02BFD82B900811A57 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190DFBF2BFD82B900811A57 /* SampleData.swift */; };
 		B190DFC22BFD859600811A57 /* DanceDancer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190DFC12BFD859600811A57 /* DanceDancer.swift */; };
+		B190DFC42BFD8C7600811A57 /* DanceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190DFC32BFD8C7600811A57 /* DanceDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		B175A6CB2BF9CE3500360B3F /* DanceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceList.swift; sourceTree = "<group>"; };
 		B190DFBF2BFD82B900811A57 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		B190DFC12BFD859600811A57 /* DanceDancer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceDancer.swift; sourceTree = "<group>"; };
+		B190DFC32BFD8C7600811A57 /* DanceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				B175A6C72BF9CBF900360B3F /* Dance.swift */,
 				B190DFC12BFD859600811A57 /* DanceDancer.swift */,
 				B1142CC52BF99F5200148296 /* Dancer.swift */,
+				B190DFC32BFD8C7600811A57 /* DanceDetail.swift */,
 				B1688D762BFAB26A006366F5 /* DancerDetail.swift */,
 				B175A6CB2BF9CE3500360B3F /* DanceList.swift */,
 				B175A6C92BF9CCCC00360B3F /* DancerList.swift */,
@@ -160,6 +163,7 @@
 			files = (
 				B1142CC42BF99F5200148296 /* ContentView.swift in Sources */,
 				B190DFC22BFD859600811A57 /* DanceDancer.swift in Sources */,
+				B190DFC42BFD8C7600811A57 /* DanceDetail.swift in Sources */,
 				B1688D772BFAB26A006366F5 /* DancerDetail.swift in Sources */,
 				B175A6C82BF9CBF900360B3F /* Dance.swift in Sources */,
 				B1142CC62BF99F5200148296 /* Dancer.swift in Sources */,

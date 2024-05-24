@@ -12,13 +12,14 @@ struct DanceList: View {
     @Environment(\.modelContext) private var modelContext: ModelContext
     @Query(sort: \Dance.name) private var dances: [Dance]
     
+    @State private var newDance: Dance?
+    
     var body: some View {
         NavigationSplitView {
             List {
                 ForEach(dances) { dance in
                     NavigationLink {
-                        Text(dance.name)
-                            .navigationTitle("Dance")
+                        DanceDetail(dance: dance)
                     } label: {
                         Text(dance.name)
                     }
@@ -38,6 +39,12 @@ struct DanceList: View {
                     }
                 }
             }
+            .sheet(item: $newDance) { dance in
+                NavigationStack {
+                    DanceDetail(dance: dance, isNew: true)
+                }
+                .interactiveDismissDisabled()
+            }
         } detail: {
             Text("Select a dance")
                 .navigationTitle("Dance")
@@ -47,6 +54,7 @@ struct DanceList: View {
     private func addDance() {
         let newItem = Dance(name: "")
         modelContext.insert(newItem)
+        newDance = newItem
     }
     
     private func deleteDances(offsets: IndexSet) {

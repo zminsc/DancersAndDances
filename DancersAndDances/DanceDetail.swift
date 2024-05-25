@@ -64,21 +64,27 @@ struct DanceDetail: View {
 
 struct DancerSelection: View {
     @Environment(\.dismiss) private var dismiss
-    @Query(sort: \Dancer.name) private var dancers: [Dancer]
+    @Query(sort: \Dancer.name) private var allDancers: [Dancer]
     
     let dance: Dance
     
     var body: some View {
+        let dancersNotInDance = allDancers.filter { dancer in
+            !dance.dancers.contains(where: { $0.id == dancer.id })
+        }
+        
         List {
-            ForEach(dancers) { dancer in
+            ForEach(dancersNotInDance) { dancer in
                 Button {
-                    dancer.dances.append(dance)
+                    dance.dancers.append(dancer)
                     dismiss()
                 } label: {
                     Text(dancer.name)
                 }
             }
+            .foregroundStyle(.black)
         }
+        .navigationTitle("Select Dancers")
     }
 }
 
